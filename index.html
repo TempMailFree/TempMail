@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempMail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with title and buttons -->
+        <header>
+            <h1>TempMail</h1>
+            <div class="buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1345455047449772172&permissions=2148256960&integration_type=0&scope=bot" class="button">Add Bot</a>
+                <a href="dashboard.html" class="button">Dashboard</a>
+                <button id="premiumButton" class="button">Premium</button>
+            </div>
+        </header>
+
+        <!-- Description of the bot -->
+        <section class="description">
+            <h2>What Does TempMail Do?</h2>
+            <p>Our bot offers a range of useful features to help manage your server, including generating temporary emails, sending messages, checking inboxes, and more. It’s fast, reliable, and easy to use! You can use these emails to generate social media accounts etc.</p>
+        </section>
+
+        <!-- Commands Section -->
+        <section class="commands">
+            <h2>Bot Commands</h2>
+            <ul>
+                <li><strong>/generate</strong>: Generate a temporary email for your use.</li>
+                <li><strong>/send</strong>: Send a message to a temporary email.</li>
+                <li><strong>/stock</strong>: Manage stock info [Admin only]</li>
+                <li><strong>/website</strong>: Get website information.</li>
+                <li><strong>/api</strong>: Get our bots API [Premium User Only]</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Premium Info Modal -->
+    <div id="premiumModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closePremium">&times;</span>
+            <h2>Premium Package</h2>
+            <p>For just $1.99, you will get the following benefits:</p>
+            <ul>
+                <li>Exclusive commands</li>
+                <li>Priority support</li>
+                <li>Access to premium-only channels</li>
+            </ul>
+            <p>Price: $1.99</p>
+            <button id="buyPremium">Buy Premium</button>
+        </div>
+    </div>
+
+    <!-- Discord Username Input -->
+    <div id="usernameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeUsername">&times;</span>
+            <h2>Enter your Discord Username</h2>
+            <p>Please enter your Discord username with the @ (e.g., @YourUsername):</p>
+            <input type="text" id="discordUsername" placeholder="e.g, @lix.bear" />
+            <button id="confirmPurchase">Confirm Purchase</button>
+        </div>
+    </div>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="confirmation">
+        <p>Your purchase has been sent! You will receive a DM from our staff soon!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
