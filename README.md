@@ -1,0 +1,2 @@
+# TempMail
+TempMail Discord Bot
